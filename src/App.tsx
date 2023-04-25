@@ -7,12 +7,11 @@ function App() {
     let tasks1 = [
         {id: 1, title: "CSS", isDone: true},
         {id: 2, title: "JS", isDone: true},
-        {id: 3, title: "React", isDone: true}
+        {id: 3, title: "React", isDone: false}
     ]
     let tasks2 = [
         {id: 1, title: "Terminator", isDone: true},
         {id: 2, title: "XXX", isDone: true},
-        {id: 3, title: "Jentelments of fortuna", isDone: true}
     ]
 
     return (

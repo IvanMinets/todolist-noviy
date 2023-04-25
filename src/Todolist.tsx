@@ -10,6 +10,7 @@ type PropsType = {
     tasks: Array<TaskType>
 }
 
+
 function Todolist(props: PropsType) {
     return (
         <div>
@@ -19,9 +20,13 @@ function Todolist(props: PropsType) {
                 <button>+</button>
             </div>
             <ul>
-                <li><input type="checkbox" checked={props.tasks[0].isDone}/><span>{props.tasks[0].title}</span></li>
-                <li><input type="checkbox" checked={props.tasks[1].isDone}/><span>{props.tasks[1].title}</span></li>
-                <li><input type="checkbox" checked={props.tasks[2].isDone}/><span>{props.tasks[2].title}</span></li>
+                {
+                    //убрали return и скобки .map((t)=>{return <li>...}
+                    props.tasks.map(t => <li><input type="checkbox" checked={t.isDone}/>
+                        <span>{t.title}</span>
+                        <button>x</button>
+                    </li>) //map - это метод массива, который на основе каждого элемента в массиве, создаёт новый элемент;
+                }
             </ul>
             <div>
                 <button>All</button>
