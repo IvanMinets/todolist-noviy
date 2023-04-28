@@ -19,7 +19,7 @@ function App() {
         let resultTasks = tasks.filter(t => t.id !== id) // t - параметр функции.
         // Здесь сокращённая конструкция if-else. if (t.id !== id) {return true} else {return false}
         setTasks(resultTasks); //setTask часть хука useState отвечает за перерисовку нового массива с тасками после удаления
-    }
+    } // Функция для удаления тасок
     const changeFilter = (value: FilterValuesType) => {
         setFilter(value)
     } // Функция для фильтрации тасок.
@@ -27,7 +27,14 @@ function App() {
         let newTask = {id: v1(), title: title, isDone: false}
         let newTasks = [newTask, ...tasks]
         setTasks(newTasks)
-    }
+    } // Функция для добавления тасок
+    const changeStatus = (taskId: string, isDone: boolean) => {
+        let task = tasks.find((t) => {return t.id === taskId}) // if (t.id === taskId) {return true} else {return false} //находим нужную таску
+        if (task) {
+            task.isDone = isDone;
+        }
+        setTasks(tasks);
+    } // Функция для изменения чекбокса таски
 
     let tasksForTodoList = tasks;
     if (filter === "completed") {

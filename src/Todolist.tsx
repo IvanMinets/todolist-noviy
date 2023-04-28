@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React, {ChangeEvent, ChangeEventHandler, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from "./App";
 
 type TaskType = {
@@ -53,7 +53,12 @@ function Todolist(props: PropsType) {
                         const onRemoveHandler = () => {
                             props.removeTask(t.id)
                         }// функция для удаления таски
-                        return <li key={t.id}><input type="checkbox" checked={t.isDone}/>
+                        const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => { console.log('want to change')} // функция для изменения стейта чекбокса
+
+                        return <li key={t.id}><input
+                            type="checkbox"
+                            onChange={onChangeHandler}
+                            checked={t.isDone}/>
                             <span>{t.title}</span>
                             <button onClick={onRemoveHandler}>x</button>
                         </li>
