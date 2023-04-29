@@ -33,7 +33,7 @@ function App() {
         if (task) {
             task.isDone = isDone;
         }
-        setTasks(tasks);
+        setTasks([...tasks]);
     } // Функция для изменения чекбокса таски
 
     let tasksForTodoList = tasks;
@@ -51,6 +51,7 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
+                      changeTaskStatus={changeStatus}
             />
         </div>
     );

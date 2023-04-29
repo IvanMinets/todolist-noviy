@@ -12,6 +12,7 @@ type PropsType = {
     removeTask: (id: string) => void
     changeFilter: (value: FilterValuesType) => void
     addTask: (title: string) => void
+    changeTaskStatus: (taskId: string, isDone: boolean) => void
 }
 
 function Todolist(props: PropsType) {
@@ -53,7 +54,7 @@ function Todolist(props: PropsType) {
                         const onRemoveHandler = () => {
                             props.removeTask(t.id)
                         }// функция для удаления таски
-                        const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => { console.log('want to change')} // функция для изменения стейта чекбокса
+                        const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {props.changeTaskStatus(t.id, e.currentTarget.checked)} // функция для изменения стейта чекбокса
 
                         return <li key={t.id}><input
                             type="checkbox"
