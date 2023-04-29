@@ -28,8 +28,10 @@ function Todolist(props: PropsType) {
         }
     } // функция для добавления таски по нажатию на Enter
     const addTask = () => {
-        props.addTask(newTaskTitle);
-        setNewTaskTitle("");
+        if (newTaskTitle.trim() !== "") {
+            props.addTask(newTaskTitle);
+            setNewTaskTitle("");
+        }
     } // функция для добавления таски по клику на кнопку
     const onAllClickHandler = () => props.changeFilter("all"); //функция для фильтрации всех тасок
     const onActiveClickHandler = () => props.changeFilter("active"); //функция для фильтрации активных тасок
