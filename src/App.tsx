@@ -11,54 +11,69 @@ type TodoListType = {
 }
 
 function App() {
-    const [tasks, setTasks] = useState([
-        {id: v1(), title: "CSS", isDone: true},
-        {id: v1(), title: "JS", isDone: true},
-        {id: v1(), title: "React", isDone: false},
-        {id: v1(), title: "taska", isDone: false},
-        {id: v1(), title: "taska2", isDone: false}
-    ]);
 
-    const removeTask = (id: string) => {
-        let resultTasks = tasks.filter(t => t.id !== id) // t - параметр функции.
-        // Здесь сокращённая конструкция if-else. if (t.id !== id) {return true} else {return false}
-        setTasks(resultTasks); //setTask часть хука useState отвечает за перерисовку нового массива с тасками после удаления
+    const removeTask = (id: string, todolistId: string) => {
+        let tasks = tasksObj[todolistId]; // это уже обычный массив, к которому можно применять методы
+        let resultTasks = tasks.filter(t => t.id !== id);
+        tasksObj[todolistId] = resultTasks;
+        setTasks({...tasksObj});
     } // Функция для удаления тасок
     const changeFilter = (value: FilterValuesType, todolistId: string) => {
-
+        let todolist = todolists.find(tl => tl.id === todolistId);
+        if (todolist) {
+            todolist.filter = value;
+            setTodoLists([...todolists]);
+        }
     } // Функция для фильтрации тасок.
-    const addTask = (title: string) => {
-        let newTask = {id: v1(), title: title, isDone: false}
-        let newTasks = [newTask, ...tasks]
-        setTasks(newTasks)
+    const addTask = (title: string, todolistId: string) => {
+        let newTask = {id: v1(), title: title, isDone: false};
+        let tasks = tasksObj[todolistId];
+        let newTasks = [newTask, ...tasks];
+        tasksObj[todolistId] = newTasks;
+        setTasks(tasksObj);
     } // Функция для добавления тасок
-    const changeStatus = (taskId: string, isDone: boolean) => {
+    const changeStatus = (taskId: string, isDone: boolean, todolistId: string) => {
+        let tasks = tasksObj[todolistId];
         let task = tasks.find((t) => {
             return t.id === taskId
         }) // if (t.id === taskId) {return true} else {return false} //находим нужную таску
         if (task) {
             task.isDone = isDone;
+            setTasks({...tasksObj});
         }
-        setTasks([...tasks]);
     } // Функция для изменения чекбокса таски
 
+    let todolistId1 = v1();
+    let todolistId2 = v1();
 
-    let todolists: Array<TodoListType> = [
-        {id: v1(), title: "What to learn", filter: "active"},
-        {id: v1(), title: "What to buy", filter: "completed"}
-    ]
+    let [todolists, setTodoLists] = useState<Array<TodoListType>>([
+        {id: todolistId1, title: "What to learn", filter: "active"},
+        {id: todolistId2, title: "What to buy", filter: "completed"}
+    ])
+
+    let [tasksObj, setTasks] = useState({
+        [todolistId1]: [{id: v1(), title: "CSS", isDone: true},
+            {id: v1(), title: "JS", isDone: true},
+            {id: v1(), title: "React", isDone: false},
+            {id: v1(), title: "taska", isDone: false},
+            {id: v1(), title: "taska2", isDone: false}],
+        [todolistId2]: [
+            {id: v1(), title: "Book", isDone: false},
+            {id: v1(), title: "Milk", isDone: true},
+        ]
+    })
 
     return (
         <div className="App">
             {
                 todolists.map((tl) => {
-                    let tasksForTodoList = tasks;
+                    let tasksForTodoList = tasksObj[tl.id];
 
                     if (tl.filter === "completed") {
-                        tasksForTodoList = tasks.filter(t => t.isDone === true)
+                        tasksForTodoList = tasksForTodoList.filter(t => t.isDone === true)
                     }
                     if (tl.filter === "active") {
-                        tasksForTodoList = tasks.filter(t => t.isDone === false)
+                        tasksForTodoList = tasksForTodoList.filter(t => t.isDone === false)
                     }
                     return <Todolist
                         key={tl.id}
