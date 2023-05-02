@@ -24,8 +24,8 @@ function App() {
         // Здесь сокращённая конструкция if-else. if (t.id !== id) {return true} else {return false}
         setTasks(resultTasks); //setTask часть хука useState отвечает за перерисовку нового массива с тасками после удаления
     } // Функция для удаления тасок
-    const changeFilter = (value: FilterValuesType) => {
-        setFilter(value)
+    const changeFilter = (value: FilterValuesType, todolistId: string) => {
+
     } // Функция для фильтрации тасок.
     const addTask = (title: string) => {
         let newTask = {id: v1(), title: title, isDone: false}
@@ -33,7 +33,9 @@ function App() {
         setTasks(newTasks)
     } // Функция для добавления тасок
     const changeStatus = (taskId: string, isDone: boolean) => {
-        let task = tasks.find((t) => {return t.id === taskId}) // if (t.id === taskId) {return true} else {return false} //находим нужную таску
+        let task = tasks.find((t) => {
+            return t.id === taskId
+        }) // if (t.id === taskId) {return true} else {return false} //находим нужную таску
         if (task) {
             task.isDone = isDone;
         }
@@ -49,7 +51,7 @@ function App() {
     return (
         <div className="App">
             {
-                todolists.map((tl)=>{
+                todolists.map((tl) => {
                     let tasksForTodoList = tasks;
 
                     if (tl.filter === "completed") {
@@ -58,13 +60,16 @@ function App() {
                     if (tl.filter === "active") {
                         tasksForTodoList = tasks.filter(t => t.isDone === false)
                     }
-                    return   <Todolist title={tl.title}
-                                       tasks={tasksForTodoList}
-                                       removeTask={removeTask}
-                                       changeFilter={changeFilter}
-                                       addTask={addTask}
-                                       changeTaskStatus={changeStatus}
-                                       filter={tl.filter}
+                    return <Todolist
+                        key={tl.id}
+                        id={tl.id}
+                        title={tl.title}
+                        tasks={tasksForTodoList}
+                        removeTask={removeTask}
+                        changeFilter={changeFilter}
+                        addTask={addTask}
+                        changeTaskStatus={changeStatus}
+                        filter={tl.filter}
                     />
                 })
             }

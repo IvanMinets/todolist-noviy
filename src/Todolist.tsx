@@ -7,10 +7,11 @@ type TaskType = {
     isDone: boolean
 }
 type PropsType = {
+    id: string
     title: string
     tasks: Array<TaskType>
     removeTask: (id: string) => void
-    changeFilter: (value: FilterValuesType) => void
+    changeFilter: (value: FilterValuesType, todolistId: string) => void
     addTask: (title: string) => void
     changeTaskStatus: (taskId: string, isDone: boolean) => void
     filter: FilterValuesType
@@ -38,9 +39,9 @@ function Todolist(props: PropsType) {
             addTask()
         }
     } // функция для добавления таски по нажатию на Enter
-    const onAllClickHandler = () => props.changeFilter("all"); //функция для фильтрации всех тасок
-    const onActiveClickHandler = () => props.changeFilter("active"); //функция для фильтрации активных тасок
-    const onCompletedClickHandler = () => props.changeFilter("completed");//функция для фильтрации выполненных тасок
+    const onAllClickHandler = () => props.changeFilter("all", props.id); //функция для фильтрации всех тасок
+    const onActiveClickHandler = () => props.changeFilter("active", props.id); //функция для фильтрации активных тасок
+    const onCompletedClickHandler = () => props.changeFilter("completed", props.id);//функция для фильтрации выполненных тасок
 
     return (
         <div>
