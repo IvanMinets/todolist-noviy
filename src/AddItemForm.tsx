@@ -1,8 +1,8 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from "react";
+import {Button} from "@mui/material";
 
 type addItemFormPropsType = {
-    addTask: (title: string, todolistId: string) => void
-    id: string
+    addItem: (title: string, ) => void
 }
 
 export function AddItemForm(props: addItemFormPropsType) {
@@ -19,7 +19,7 @@ export function AddItemForm(props: addItemFormPropsType) {
     const [error, setError] = useState<string | null>(null);
     const addTask = () => {
         if (newTaskTitle.trim() !== "") {
-            props.addTask(newTaskTitle, props.id);
+            props.addItem(newTaskTitle);
             setNewTaskTitle("");
         } else {
             setError("Title is required");
@@ -32,9 +32,7 @@ export function AddItemForm(props: addItemFormPropsType) {
                    onKeyDown={onKeyDownHandler}
                    className={error ? "error" : ""}
             />
-            <button onClick={addTask}>
-                +
-            </button>
+            <Button onClick={addTask} variant={'contained'} color={'primary'}>+</Button>
             {error && <div className={"error-message"}>{error}</div>}
         </div>
     )
