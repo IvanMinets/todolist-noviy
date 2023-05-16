@@ -100,6 +100,7 @@ function App() {
         setTodoLists([todolist, ...todolists]);
         setTasks({...tasksObj, [todolist.id]:[]})
     }
+
     return (
         <div className="App">
             <AddItemForm addItem={addTodolist}/>
