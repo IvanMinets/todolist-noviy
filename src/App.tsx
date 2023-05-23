@@ -65,7 +65,27 @@ function App() {
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"}
     ])
+    let [tasksObj, setTasks] = useState<TasksStateType>({
+        [todolistId1]: [{id: v1(), title: "CSS", isDone: true},
+            {id: v1(), title: "JS", isDone: true},
+            {id: v1(), title: "React", isDone: false},
+            {id: v1(), title: "taska", isDone: false},
+            {id: v1(), title: "taska2", isDone: false}],
+        [todolistId2]: [
+            {id: v1(), title: "Book", isDone: false},
+            {id: v1(), title: "Milk", isDone: true},
+        ]
+    })
 
+    const addTodolist = (title: string) => {
+        let todolist: TodoListType = {
+            id: v1(),
+            filter: "all",
+            title: title
+        }
+        setTodoLists([todolist, ...todolists]);
+        setTasks({...tasksObj, [todolist.id]:[]})
+    }
     let removeTodoList = (todoListId: string) => {
         let filteredTodolist = todolists.filter( tl => tl.id !== todoListId)
         setTodoLists(filteredTodolist);
@@ -78,27 +98,6 @@ function App() {
             todolist.title = newTitle;
             setTodoLists([...todolists])
         }
-    }
-
-    let [tasksObj, setTasks] = useState<TasksStateType>({
-        [todolistId1]: [{id: v1(), title: "CSS", isDone: true},
-            {id: v1(), title: "JS", isDone: true},
-            {id: v1(), title: "React", isDone: false},
-            {id: v1(), title: "taska", isDone: false},
-            {id: v1(), title: "taska2", isDone: false}],
-        [todolistId2]: [
-            {id: v1(), title: "Book", isDone: false},
-            {id: v1(), title: "Milk", isDone: true},
-        ]
-    })
-    const addTodolist = (title: string) => {
-        let todolist: TodoListType = {
-            id: v1(),
-            filter: "all",
-            title: title
-        }
-        setTodoLists([todolist, ...todolists]);
-        setTasks({...tasksObj, [todolist.id]:[]})
     }
 
     return (

@@ -6,9 +6,8 @@ type ActionType = {
     [key: string]: any
 }
 
-// меня вызовут и дадут мне стейт (почти всегда объект)
-// и инструкцию (action, тоже объект)
-// согласно прописанному type в этом action (инструкции) я поменяю state
+
+
 export const todolistsReducer = (state: Array<TodoListType>, action: ActionType): Array<TodoListType> => {
     switch (action.type) {
         case 'REMOVE-TODOLIST' : {
@@ -21,6 +20,13 @@ export const todolistsReducer = (state: Array<TodoListType>, action: ActionType)
             const todolist = state.find(tl => tl.id ===action.id)
             if (todolist) {
                todolist.title = action.title;
+            }
+            return [...state]
+        }
+        case 'CHANGE-TODOLIST-FILTER': {
+            const todolist = state.find(tl => tl.id ===action.id)
+            if (todolist) {
+                todolist.filter = action.filter;
             }
             return [...state]
         }
