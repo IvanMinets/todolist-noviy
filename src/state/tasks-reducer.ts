@@ -54,7 +54,7 @@ export const tasksReducer = (state: TasksStateType, action: ActionsType): TasksS
             }
             return stateCopy;
         }
-        case "CHANGE-TASK-TITLE": {
+        case 'CHANGE-TASK-TITLE': {
             const stateCopy = {...state};
             let tasks = stateCopy[action.todolistId];
             // найдём нужную таску:
@@ -79,6 +79,6 @@ export const addTaskAC = (title: string, todolistId: string): AddTaskType => {
 export const changeTaskStatusAC = (taskId: string, isDone: boolean, todolistId: string ): ChangeTaskStatusActionType => {
     return { type: 'CHANGE-TASK-STATUS', taskId, isDone, todolistId}
 }
-export const changeTaskTitleAC = ( title: string, todolistId: string, taskId: string ): ChangeTaskTitleActionType => {
+export const changeTaskTitleAC = ( taskId: string, title: string, todolistId: string ): ChangeTaskTitleActionType => {
     return { type: 'CHANGE-TASK-TITLE', title, todolistId, taskId}
 }
