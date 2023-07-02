@@ -103,7 +103,7 @@ function App() {
                             let allTodolistTasks = tasks[tl.id];
 
                             return <Grid item key={tl.id}>
-                                <Paper style={{padding: '10px'}}>
+                                <Paper style={{padding: ' 10px'}}>
                                     <Todolist
                                         id={tl.id}
                                         title={tl.title}
