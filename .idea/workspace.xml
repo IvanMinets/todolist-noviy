@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor" />
+    <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +142,7 @@
       <workItem from="1686749589239" duration="649000" />
       <workItem from="1687359899201" duration="633000" />
       <workItem from="1688480303861" duration="66000" />
-      <workItem from="1697107572401" duration="2791000" />
+      <workItem from="1697107572401" duration="8177000" />
     </task>
     <task id="LOCAL-00001" summary="Changes, refactor">
       <created>1682605725927</created>
