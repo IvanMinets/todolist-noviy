@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2OxKLZJUwfqiIHKV6dtsL1jF7rB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FrontEnd/It-incubator/todolist-noviy/src&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/FrontEnd/It-incubator/todolist-noviy/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\FrontEnd\\It-incubator\\todolist-noviy\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FrontEnd\It-incubator\todolist-noviy\src" />
+      <recent name="D:\FrontEnd\It-incubator\todolist-noviy\src\state" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.storybook">
+    <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct filter of todolist should be changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="correct task should be deleted from correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct task should be deleted from correct array" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user reducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-names>
+        <test-name value="user reducer should increment only age" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.storybook" />
+        <item itemvalue="Jest.correct task should be deleted from correct array" />
+        <item itemvalue="Jest.correct filter of todolist should be changed" />
+        <item itemvalue="Jest.user reducer should increment only age" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="" />
+      <created>1682496739991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682496739991</updated>
+      <workItem from="1682496742711" duration="9868000" />
+      <workItem from="1682582922722" duration="12433000" />
+      <workItem from="1682607238508" duration="598000" />
+      <workItem from="1682674934060" duration="3492000" />
+      <workItem from="1682756582660" duration="5315000" />
+      <workItem from="1683014588037" duration="16203000" />
+      <workItem from="1683099320313" duration="1186000" />
+      <workItem from="1683810705943" duration="180000" />
+      <workItem from="1684159642878" duration="661000" />
+      <workItem from="1684232314027" duration="614000" />
+      <workItem from="1684239993828" duration="27000" />
+      <workItem from="1684240031067" duration="6996000" />
+      <workItem from="1684399775374" duration="2069000" />
+      <workItem from="1684849902523" duration="2962000" />
+      <workItem from="1684922869782" duration="635000" />
+      <workItem from="1684923572471" duration="9729000" />
+      <workItem from="1685375833612" duration="643000" />
+      <workItem from="1685533370625" duration="8821000" />
+      <workItem from="1685605306980" duration="193000" />
+      <workItem from="1685717552787" duration="1338000" />
+      <workItem from="1685953058219" duration="595000" />
+      <workItem from="1685955174530" duration="17000" />
+      <workItem from="1686142463100" duration="4224000" />
+      <workItem from="1686749589239" duration="649000" />
+      <workItem from="1687359899201" duration="633000" />
+      <workItem from="1688480303861" duration="66000" />
+      <workItem from="1697107572401" duration="2791000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changes, refactor">
+      <created>1682605725927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682605725927</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes, refactor">
+      <created>1684243570173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684243570173</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes, refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes, refactor" />
+  </component>
+</project>
