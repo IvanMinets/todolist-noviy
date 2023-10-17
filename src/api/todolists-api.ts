@@ -16,7 +16,7 @@ export type TodolistType = {
 
 export const todolistsApi = {
     getTodolists() {
-       const promise =  axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists', settings)
+       const promise =  axios.get<Array<TodolistType>>('https://social-network.samuraijs.com/api/1.1/todo-lists', settings)
         return promise;
     },
     createTodolist(title: string) {
