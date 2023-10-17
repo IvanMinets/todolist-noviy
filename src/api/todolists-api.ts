@@ -14,27 +14,11 @@ export type TodolistType = {
     order: number
 }
 
-type CreateTodolistResponseType = {
-    resultCode: number
-    messages: string[]
-    data: {
-        item: TodolistType
-    }
-}
-type DeleteUpdateTodolistResponseType = {
-    resultCode: number
-    messages: Array<string>
-    fieldsErrors: Array<string>
-    data: {}
-}
-
 type ResponseType<D> = {
     resultCode: number
     messages: string[]
     data: D
 }
-
-
 
 export const todolistsApi = {
     getTodolists() {
