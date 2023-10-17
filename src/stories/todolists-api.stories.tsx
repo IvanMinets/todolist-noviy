@@ -8,8 +8,6 @@ export default {
 export const GetTodolists = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        // здесь мы будем делать запрос и ответ закидывать в стейт.
-        // который в виде строки будем отображать в div-ке
         todolistsApi.getTodolists()
         .then( (res) => {
             debugger
@@ -58,5 +56,26 @@ export const UpdateTodolistTitle = () => {
 }
 
 export const GetTasks = () => {
-
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+        const todolistId = '3a538602-332c-4181-b91b-5babb1301ce9'
+        todolistsApi.getTasks(todolistId)
+            .then( (res) => {
+                debugger
+                setState(res.data)
+            })
+    }, [])
+    return <div>{JSON.stringify(state)}</div>
+}
+export const DeleteTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+        const todolistId = '3a538602-332c-4181-b91b-5babb1301ce9'
+        todolistsApi.getTasks(todolistId)
+            .then( (res) => {
+                debugger
+                setState(res.data)
+            })
+    }, [])
+    return <div>{JSON.stringify(state)}</div>
 }

@@ -10,9 +10,7 @@ const instance = axios.create(
     {
         baseURL: 'https://social-network.samuraijs.com/api/1.1/',
         ...settings
-    }
-
-)
+    })
 
 export type TodolistType = {
     id: string
@@ -29,7 +27,7 @@ type ResponseType<D> = {
 
 export const todolistsApi = {
     getTodolists() {
-       const promise =  instance.get<TodolistType[]>('todo-lists')
+       const promise = instance.get<TodolistType[]>('todo-lists')
         return promise;
     },
     createTodolist(title: string) {
@@ -43,5 +41,11 @@ export const todolistsApi = {
     deleteTodolist(id: string) {
         const promise = instance.delete<ResponseType<{}>>(`todo-lists/${id}`)
         return promise;
-    }
+    },
+    getTasks(todolistId: string) {
+        return instance.get(`todo-lists/${todolistId}/tasks`)
+    },
+    deleteTasks(todolistId: string, taskId: string) { 
+      return instance.delete(`todo-lists/${todolistId}/tasks/${taskId}`)
+    },
 }
