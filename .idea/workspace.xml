@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor" />
+    <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor">
+      <change afterPath="$PROJECT_DIR$/src/Default.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/palette.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/previews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/useInitial.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +22,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="com.haulmont.rcb.palette" />
+        <option value="com.haulmont.rcb.previews" />
+        <option value="com.haulmont.rcb.index" />
+        <option value="com.haulmont.rcb.useInitial" />
+        <option value="com.haulmont.rcb.README" />
+        <option value="com.haulmont.rcb.arrow_function_component" />
       </list>
     </option>
   </component>
@@ -40,10 +57,20 @@
     "node.js.selected.package.standard": "",
     "nodejs.jest.jest_package": "D:/FrontEnd/It-incubator/todolist-noviy/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "D:\\FrontEnd\\It-incubator\\todolist-noviy\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FrontEnd\It-incubator\todolist-noviy\src" />
@@ -103,9 +130,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.storybook" />
+        <item itemvalue="Jest.user reducer should increment only age" />
         <item itemvalue="Jest.correct task should be deleted from correct array" />
         <item itemvalue="Jest.correct filter of todolist should be changed" />
-        <item itemvalue="Jest.user reducer should increment only age" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +171,9 @@
       <workItem from="1687359899201" duration="633000" />
       <workItem from="1688480303861" duration="66000" />
       <workItem from="1697107572401" duration="12117000" />
-      <workItem from="1697535455772" duration="8380000" />
+      <workItem from="1697535455772" duration="9061000" />
+      <workItem from="1697551002915" duration="324000" />
+      <workItem from="1697551339700" duration="5152000" />
     </task>
     <task id="LOCAL-00001" summary="Changes, refactor">
       <created>1682605725927</created>
