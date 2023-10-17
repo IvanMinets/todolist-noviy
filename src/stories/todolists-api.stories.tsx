@@ -57,3 +57,6 @@ export const UpdateTodolistTitle = () => {
     return <div>{JSON.stringify(state)}</div>
 }
 
+export const GetTasks = () => {
+
+}
