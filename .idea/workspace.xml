@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +165,7 @@
       <workItem from="1697535455772" duration="9061000" />
       <workItem from="1697551002915" duration="324000" />
       <workItem from="1697551339700" duration="5152000" />
-      <workItem from="1697614942853" duration="4703000" />
+      <workItem from="1697614942853" duration="5292000" />
     </task>
     <task id="LOCAL-00001" summary="Changes, refactor">
       <created>1682605725927</created>
