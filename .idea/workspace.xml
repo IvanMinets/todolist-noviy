@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00202af9-cfda-4559-97a3-8128a2348463" name="Changes" comment="Changes, refactor">
-      <change afterPath="$PROJECT_DIR$/src/Default.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/palette.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/previews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/useInitial.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/FrontEnd/It-incubator/todolist-noviy/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs.jest.jest_package": "D:/FrontEnd/It-incubator/todolist-noviy/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "D:\\FrontEnd\\It-incubator\\todolist-noviy\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FrontEnd/It-incubator/todolist-noviy/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/FrontEnd/It-incubator/todolist-noviy/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\FrontEnd\\It-incubator\\todolist-noviy\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -174,6 +166,7 @@
       <workItem from="1697535455772" duration="9061000" />
       <workItem from="1697551002915" duration="324000" />
       <workItem from="1697551339700" duration="5152000" />
+      <workItem from="1697614942853" duration="4703000" />
     </task>
     <task id="LOCAL-00001" summary="Changes, refactor">
       <created>1682605725927</created>
